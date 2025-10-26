@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+    <div class="form-container">
+        <div class="admin-header">
+            <h2>Input Data Sertifikat</h2>
+            <div data-netlify-identity-menu></div>
+        </div>
+        
+        <form id="cert-form">
+            <div class="form-group">
+                <label for="cert-number">Certificate Number</label>
+                <input type="text" id="cert-number" required>
+            </div>
+            <div class="form-group">
+                <label for="company-name">Company name</label>
+                <input type="text" id="company-name" required>
+            </div>
+            <div class="form-group">
+                <label for="company-address">Company's address</label>
+                <input type="text" id="company-address" required>
+            </div>
+            <div class="form-group">
+                <label for="standards">Certification Standards</label>
+                <input type="text" id="standards" value="ISO 9001:2015" required>
+            </div>
+            <div class="form-group">
+                <label for="scope">Scope</label>
+                <input type="text" id="scope" required>
+            </div>
+            <div class="form-group">
+                <label for="effective-date">Effective Date</label>
+                <input type="text" id="effective-date" placeholder="DD/MM/YYYY" required>
+            </div>
+            <div class="form-group">
+                <label for="surv-1">Surveillance 1st</label>
+                <input type="text" id="surv-1" placeholder="DD/MM/YYYY" required>
+            </div>
+            <div class="form-group">
+                <label for="surv-2">Surveillance 2nd</label>
+                <input type="text" id="surv-2" placeholder="DD/MM/YYYY" required>
+            </div>
+            <div class="form-group">
+                <label for="expire-date">Expire Date</label>
+                <input type="text" id="expire-date" placeholder="DD/MM/YYYY" required>
+            </div>
+            <div class="form-group">
+                <label for="status">Status</label>
+                <input type="text" id="status" value="Valid" required>
+            </div>
+            <button type="submit" class="btn" id="submit-btn">Simpan Sertifikat</button>
+            <p id="message"></p>
+        </form>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
